@@ -63,13 +63,36 @@
 </div>
 </div>
             <!-- CÓDIGO DA KIWIFY -->
+      
+      <script>
+        var offer = "22a76c5d-180a-4103-bffa-203d406aa8bd";
+        var nextPageURL = null;
+        var refusePageURL = null;
+      </script>
+      <script src="https://snippets.kirvano.com/upsell.min.js"></script>
+
+      <!--
+      INSTRUÇÕES:
+
+      Para abrir o modal do upsell, basta adicionar a classe "kirvano-payment-trigger" no(s) elemento(s)
+      da página que vão executar a ação de compra.
+
+      Exemplo:
+      <button class="kirvano-payment-trigger">Sim, eu aceito essa oferta especial!</button>
+
+      Da mesma forma, para rejeitar a oferta, adicione a classe "kirvano-refuse-trigger"
+      no(s) elemento(s) por essa ação. Dependendo de como sua estratégia foi configurada,
+      o cliente será direcionado para uma nova oferta  ou para a "Página de obrigado" da Kirvano.
+
+      Exemplo:
+      <button class="kirvano-refuse-trigger">Não, eu gostaria de recusar essa oferta</button>
+      -->
+    
 
             <div style="text-align:center">
-          <button id="kiwify-upsell-trigger-QzvpICV" style="background-color:#5383ad;padding:12px 16px;cursor:pointer;color:#FFFFFF;font-weight:600;border-radius:4px;border:1px solid #5383ad;font-size:20px;">Sim, eu aceito essa oferta especial!</button>
-          <div id="kiwify-upsell-cancel-trigger" style="margin-top:1rem;cursor:pointer;font-size:16px;text-decoration:underline;font-family:sans-serif;">Não, eu gostaria de recusar essa oferta</div>
-        </div><script> 
-            let nextUpsellURL = "";
-            let nextDownsellURL = "";</script><script src="https://kiwify-snippets.netlify.app/upsell/upsell.min.js"></script>
+          <button class="kirvano-payment-trigger style="background-color:#5383ad;padding:12px 16px;cursor:pointer;color:#FFFFFF;font-weight:600;border-radius:4px;border:1px solid #5383ad;font-size:20px;">Sim, eu aceito essa oferta especial!</button>
+          <div class="kirvano-refuse-trigger" style="margin-top:1rem;cursor:pointer;font-size:16px;text-decoration:underline;font-family:sans-serif;">Não, eu gostaria de recusar essa oferta</div>
+        </div>
 
             <!-- CÓDIGO DA KIWIFY -->
 
