@@ -90,4 +90,19 @@
       setTimeout(show_notification, 4 * 1000);
     </script>
   
-</body></html>
+</body>
+<script>
+    window.onload = (event) => {
+        const links = document.querySelectorAll("a");
+        links.forEach(function (link) {
+            const href = link.href;
+            if (href !== null || href !== "") {
+                if (href.includes("kirvano")) {
+                    let search_params = document.location.search.replace("?", "");
+                    let urlFinal = href + (href.indexOf("?") > 0 ? "&" : "?") + search_params.toString();
+                    link.href = urlFinal;
+                }
+            }
+        });
+    };
+</script></html>
